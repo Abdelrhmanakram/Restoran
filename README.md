@@ -6,8 +6,6 @@ A full-stack web application for managing restaurant operations, built using **S
 
 ## 📁 Project Structure
 
-## 📁 Project Structure
-
 ```plaintext
 restaurant-management-system/
 ├── back-end/Resturant/
