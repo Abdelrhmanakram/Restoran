@@ -6,34 +6,38 @@ A full-stack web application for managing restaurant operations, built using **S
 
 ## 📁 Project Structure
 
+## 📁 Project Structure
+
+```plaintext
 restaurant-management-system/
-back-end/Resturant/
-├── src/
-│   └── main/
-│       ├── java/
-│       │   └── com/spring/restaurant/   # Adjust this to your actual package
-│       │       ├── config/         # Spring and security configuration classes
-│       │       ├── controller/     # REST API endpoints
-│       │       ├── mapper/         # MapStruct mappers for DTO ↔ Entity
-│       │       ├── model/         # JPA Entities (mapped to Oracle DB)
-│       │       ├── repository/     # Interfaces extending JpaRepository
-│       │       └── service/        # Business logic layer
-│       └── resources/
-│           ├── application.yml     # Spring Boot config (Oracle DB, JWT, etc.)
-│   └── pom.xml                  # Maven configuration
+├── back-end/Resturant/
+│   └── src/
+│       └── main/
+│           ├── java/com/spring/restaurant/       # Your main backend package
+│           │   ├── config/                       # Spring and security configuration classes
+│           │   ├── controller/                   # REST API endpoints
+│           │   ├── mapper/                       # MapStruct mappers for DTO ↔ Entity
+│           │   ├── model/                        # JPA Entities (mapped to Oracle DB)
+│           │   ├── repository/                   # Interfaces extending JpaRepository
+│           │   └── service/                      # Business logic layer
+│           └── resources/
+│               ├── application.yml               # Spring Boot config (Oracle DB, JWT, etc.)
+│               └── static/ (if needed)
+│   └── pom.xml                                   # Maven configuration
 
-├── frontend/                     # Angular frontend
+├── frontend/                                     # Angular frontend
 │   ├── src/
-│   │   ├── app/
-│   │   │   ├── components/       # UI components
-│   │   │   ├── pages/            # Feature modules or views
-│   │   │   ├── services/         # Angular services for API calls
-│   │   │   ├── models/           # TypeScript interfaces and models
-│   │   │   └── app.module.ts     # Root Angular module
-│   └── angular.json             # Angular CLI configuration
+│   │   └── app/
+│   │       ├── components/                       # UI components
+│   │       ├── pages/                            # Feature modules or views
+│   │       ├── services/                         # Angular services for API calls
+│   │       ├── models/                           # TypeScript interfaces and models
+│   │       └── app.module.ts                     # Root Angular module
+│   └── angular.json                              # Angular CLI configuration
 
-└── README.md                     # Project documentation
+└── README.md                                     # Project documentation
 
+```
 ---
 
 ## 🚀 Features
