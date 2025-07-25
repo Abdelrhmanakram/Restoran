@@ -1,0 +1,33 @@
+<div class="payment-container">
+  <h2>Payment Details</h2>
+
+  <!-- Display message after form is submitted -->
+  <div  class="processing-message">
+    Processing payment on the server...
+  </div>
+
+  <form   >
+    <div class="form-group">
+      <label for="cardNumber">Card Number</label>
+      <input type="number" id="cardNumber" name="cardNumber"  required />
+    </div>
+
+    <div class="form-group">
+      <label for="expiryDate">Expiry Date</label>
+      <input type="month" id="expiryDate" name="expiryDate" required />
+    </div>
+
+
+    <div class="form-group">
+      <label for="cvv">CVV</label>
+      <input type="number" id="cvv" name="cvv"  required  min="100" max="999"/>
+    </div>
+
+    <div class="form-group">
+      <label for="amount">Amount</label>
+      <input type="number" id="amount" name="amount"  required />
+    </div>
+
+    <button type="submit"(click)="onSubmit()" >Pay</button>
+  </form>
+</div>
