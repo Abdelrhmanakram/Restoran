@@ -6,6 +6,33 @@ A full-stack web application for managing restaurant operations, built using **S
 
 ## 📁 Project Structure
 
+restaurant-management-system/
+back-end/Resturant/
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── com/spring/restaurant/   # Adjust this to your actual package
+│       │       ├── config/         # Spring and security configuration classes
+│       │       ├── controller/     # REST API endpoints
+│       │       ├── mapper/         # MapStruct mappers for DTO ↔ Entity
+│       │       ├── model/         # JPA Entities (mapped to Oracle DB)
+│       │       ├── repository/     # Interfaces extending JpaRepository
+│       │       └── service/        # Business logic layer
+│       └── resources/
+│           ├── application.yml     # Spring Boot config (Oracle DB, JWT, etc.)
+│   └── pom.xml                  # Maven configuration
+
+├── frontend/                     # Angular frontend
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── components/       # UI components
+│   │   │   ├── pages/            # Feature modules or views
+│   │   │   ├── services/         # Angular services for API calls
+│   │   │   ├── models/           # TypeScript interfaces and models
+│   │   │   └── app.module.ts     # Root Angular module
+│   └── angular.json             # Angular CLI configuration
+
+└── README.md                     # Project documentation
 
 ---
 
@@ -37,7 +64,7 @@ A full-stack web application for managing restaurant operations, built using **S
 |-----------|---------------------------------------------|
 | Backend   | Java, Spring Boot, Spring Security, Lombok, MapStruct |
 | Frontend  | Angular, TypeScript, HTML, SCSS             |
-| Database     | Oracle Database (via Hibernate ORM)                            |
+| Database     | Oracle Database (Hibernate ORM, JPA)     |
 | Build Tools | Maven, Angular CLI                        |
 | Security  | JWT, BCrypt                                 |
 
@@ -51,7 +78,7 @@ A full-stack web application for managing restaurant operations, built using **S
 - Node.js & npm
 - Angular CLI (`npm install -g @angular/cli`)
 - Maven
-- MySQL / PostgreSQL (or use embedded H2)
+- Oracle Database
 
 ---
 
